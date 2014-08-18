@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmberFireLogin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-fire-login.css">
+  </head>
+  <body>
+    <script>
+      window.EmberFireLoginENV = {{ENV}};
+      window.EmberENV = window.EmberFireLoginENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-fire-login.js"></script>
+    <script>
+      window.EmberFireLogin = require('ember-fire-login/app')['default'].create(EmberFireLoginENV.APP);
+    </script>
+  </body>
+</html>
