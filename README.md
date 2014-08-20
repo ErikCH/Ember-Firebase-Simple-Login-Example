@@ -1,6 +1,10 @@
 # Ember-fire-login
 
-This README outlines the details of collaborating on this Ember application.
+This is an example of using Ember CLI with Firebase Simple Login
+Make sure to follow the instructions [here](http://www.programwitherik.com/ember-cli-with-firebase-simple-login/)
+At the minimum you need to setup an authenticator in Firebase and edit the adapters.js file with the correct Firebase URL.
+
+This is a work in progress, please let me know if you have any issues.
 
 ## Installation
 
@@ -12,11 +16,6 @@ This README outlines the details of collaborating on this Ember application.
 
 * `ember server`
 * Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
 
 ## Building
 
